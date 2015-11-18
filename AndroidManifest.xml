@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.xiaoke.accountsoft.activity"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="15" />
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <application 
+        android:allowBackup="true"
+        android:icon="@drawable/appicon" 
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        >
+        <activity android:name=".Login"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".MainActivity"
+                  android:label="@string/app_name"
+                  >
+        </activity>
+        
+		<activity  android:name=".AddOutaccount"
+			android:label="@string/addoutaccount"
+			android:icon="@drawable/addoutaccount">
+		</activity>
+		<activity  android:name=".AddInaccount"
+			android:label="@string/addinaccount"
+			android:icon="@drawable/addinaccount">
+		</activity>
+		<activity  android:name=".Outaccountinfo"
+			android:label="@string/outaccountinfo"
+			android:icon="@drawable/outaccountinfo">
+		</activity>
+		<activity  android:name=".Inaccountinfo"
+			android:label="@string/inaccountinfo"
+			android:icon="@drawable/inaccountinfo">
+		</activity>
+		<activity  android:name=".Showinfo"
+			android:label="@string/showinfo"
+			android:icon="@drawable/showinfo">
+		</activity>
+		<activity  android:name=".Sysset"
+		    android:launchMode="singleTask"
+			android:label="@string/sysset"
+			android:icon="@drawable/sysset">
+		</activity>
+		<activity  android:name=".Accountflag"
+			android:label="@string/accountflag"
+			android:icon="@drawable/accountflag">
+		</activity>
+		<activity  android:name=".InfoManage"
+			android:label="@string/infomanage"
+			android:icon="@drawable/showinfo">
+		</activity>
+		<activity  android:name=".FlagManage"
+			android:label="@string/flagmanage"
+			android:icon="@drawable/accountflag">
+		</activity>
+		
+		<activity  android:name=".ChagePwdActivity"
+			android:label="@string/chagepwd"
+			android:icon="@drawable/sysset">
+		</activity>
+		
+    </application>
+</manifest>

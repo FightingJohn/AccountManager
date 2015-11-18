@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="com.lyl.accountsoft.view.SystemItemView">
+        <attr name="title" format="string" />
+        <attr name="offState" format="string" />
+        <attr name="onState" format="string" />
+    </declare-styleable>
+    
+</resources>

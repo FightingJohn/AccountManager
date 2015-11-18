@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lyl="http://schemas.android.com/apk/res/com.xiaoke.accountsoft.activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        style="@style/PageTitle"
+        android:text="系统设置"/>
+    
+    <com.lyl.accountsoft.view.SystemItemView 
+        
+        android:id="@+id/siv_settings_item1"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	lyl:title="设置编辑页面的显示模式"
+    	lyl:offState="护眼模式关闭"
+    	lyl:onState="护眼模式开启"
+        />
+    
+    <com.lyl.accountsoft.view.SystemItemView 
+        
+        android:id="@+id/siv_settings_item2"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	lyl:title="自动更新"
+    	lyl:offState="自动更新关闭"
+    	lyl:onState="自动更新开启"
+        />
+    
+    <TextView 
+        android:id="@+id/tv_settings_item3"
+        android:layout_width="match_parent"
+    	android:layout_height="70dp"
+    	android:textSize="30sp"
+    	android:layout_marginLeft="5dp"
+    	android:gravity="center_vertical"
+    	android:text="修改密码"/>
+    
+    <View 
+        android:layout_width="match_parent"
+    	android:layout_height="0.5dp"
+    	android:background="#aaaaaa"
+    	
+        />
+</LinearLayout>
